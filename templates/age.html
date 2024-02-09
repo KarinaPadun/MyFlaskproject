@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Введення року народження</title>
+</head>
+<body>
+    <h1>Введення року народження</h1>
+    <form method="POST" action="{{ url_for('age') }}">
+        {{ form.hidden_tag() }}
+        {{ form.birth_year.label }}
+        {{ form.birth_year }}
+        {{ form.submit }}
+    </form>
+    <p><a href="{{ url_for('index') }}">На головну</a></p>
+</body>
+</html>
